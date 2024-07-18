@@ -1,0 +1,31 @@
+  .recipe-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+
+  #recipe-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .recipe-item img {
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  .recipe-item button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+
+  .recipe-item button.add-to-cart {
+      background-color: #4CAF50;
+      margin-left: 10px;
+  }
