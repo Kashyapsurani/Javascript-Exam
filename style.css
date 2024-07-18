@@ -1,31 +1,74 @@
-  .recipe-item {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-  }
 
-  #recipe-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-  }
+        .recipe-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: calc(25% - 20px);
+            box-sizing: border-box;
+        }
 
-  .recipe-item img {
-      display: block;
-      margin-bottom: 5px;
-  }
+        #recipe-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            padding: 20px;
+        }
 
-  .recipe-item button {
-      margin-top: 10px;
-      padding: 5px 10px;
-      background-color: #f44336;
-      color: white;
-      border: none;
-      cursor: pointer;
-  }
+        .recipe-item img {
+            display: block;
+            margin-bottom: 5px;
+            max-width: 100%;
+            height: auto;
+        }
 
-  .recipe-item button.add-to-cart {
-      background-color: #4CAF50;
-      margin-left: 10px;
-  }
+        .recipe-item button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .recipe-item button.add-to-cart {
+            background-color: #4CAF50;
+            margin-left: 10px;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        form input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .recipe-item {
+                width: calc(33.33% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .recipe-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .recipe-item {
+                width: 100%;
+            }
+        }

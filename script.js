@@ -40,66 +40,66 @@ const recipes = [
         price: 170,
     },
     {
-        name: 'shake',
+        name: 'Shake',
         calories: 450,
         image: 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2022/03/28/cookies-and-cream-milkshake.jpg.rend.hgtvcom.1280.1280.suffix/1648501387256.jpeg',
-        description: 'Decadent chocolate cake with creamy frosting.',
+        description: 'Creamy cookies and cream milkshake.',
         rating: 4.7,
         price: 170,
     },
     {
-        name: 'icerm',
+        name: 'Ice Cream',
         calories: 450,
         image: 'https://navbharattimes.indiatimes.com/thumb/85861077/most-expensive-ice-cream-in-the-world-in-hindi-85861077.jpg?imgsize=207722&width=1600&height=900&resizemode=75',
-        description: 'Decadent chocolate cake with creamy frosting.',
+        description: 'Exquisite and luxurious ice cream.',
         rating: 4.7,
         price: 170,
     },
     {
-        name: 'Frise',
+        name: 'Fries',
         calories: 450,
         image: 'https://i.pinimg.com/736x/7a/91/9c/7a919c3422cacd4dc679128e77758a45.jpg',
-        description: 'Decadent chocolate cake with creamy frosting.',
+        description: 'Golden crispy fries.',
         rating: 4.7,
         price: 170,
     },
     {
-        name: 'frenky',
+        name: 'Frankie',
         calories: 450,
         image: 'https://www.vegrecipesofindia.com/wp-content/uploads/2014/11/frankie-recipe-4.jpg',
-        description: 'Decadent chocolate cake with creamy frosting.',
+        description: 'Spicy and flavorful Indian street food wrap.',
         rating: 4.7,
         price: 170,
     },
     {
-        name: 'noodles',
+        name: 'Noodles',
         calories: 450,
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQujx5jb6WvhHb7XcW46Rmel1lts4KHWkuBfw&s',
-        description: 'Decadent chocolate cake with creamy frosting.',
+        description: 'Delicious noodles with assorted vegetables.',
         rating: 4.7,
         price: 170,
     },
     {
-        name: 'choko lava',
+        name: 'Choco Lava Cake',
         calories: 450,
         image: 'https://www.bakingo.com/blog/wp-content/uploads/2022/06/best-choco-lava-cake-recipe-ever-1200x900.jpg',
-        description: 'Decadent chocolate cake with creamy frosting.',
+        description: 'Rich chocolate cake with a gooey molten center.',
         rating: 4.7,
         price: 170,
     },
     {
-        name: 'dhosa',
+        name: 'Dosa',
         calories: 450,
         image: 'https://content.jdmagicbox.com/comp/surat/b3/0261px261.x261.190731220821.e6b3/catalogue/dr-fancy-dhosa-kathiyawadi-punjabi-surat-0wwao1j3uy.jpg',
-        description: 'Decadent chocolate cake with creamy frosting.',
+        description: 'South Indian crispy crepe made from fermented rice and lentil batter.',
         rating: 4.7,
         price: 170,
     },
     {
-        name: 'khavsa',
+        name: 'Khavsa',
         calories: 450,
         image: 'https://i.ytimg.com/vi/ac79Abwg1dA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBG5sBLMAs-oiK8UOJO7HS-2D7UpA',
-        description: 'Decadent chocolate cake with creamy frosting.',
+        description: 'Gujarati street food made from whole wheat flour and jaggery.',
         rating: 4.7,
         price: 170,
     },
@@ -142,7 +142,7 @@ function displayRecipes(recipes) {
         recipeElement.classList.add('recipe-item');
         recipeElement.innerHTML = `
                     <h3>${recipe.name}</h3>
-                    <img src="${recipe.image}" alt="${recipe.name}" width="100px" height="100px">
+                    <img src="${recipe.image}" alt="${recipe.name}">
                     <p><strong>Price:</strong> ${recipe.price}</p>
                     <p><strong>Calories:</strong> ${recipe.calories}</p>
                     <p><strong>Description:</strong> ${recipe.description}</p>
